@@ -1,0 +1,856 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #fff;    
+    background-image: url(../imagens/fundo/fundo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+a{
+    color: #292929;
+}
+
+
+/* ====================== CARD DE NOTIFICAÇÃO ===============*/
+.containerMSG{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.fecharMSG{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.fecharMSG span{
+    border-radius: 50%;    
+    font-size: 8em;
+    font-family: comic sans ms;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    cursor: pointer;
+    user-select: none;
+}
+
+.fecharMSG span:hover{
+    transform: rotate(320deg);
+    transition: 1s;
+    color: #ff0000;
+}
+
+.MGS{
+    height: 300px;
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #292929;
+}
+
+.containerTituloErro{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 2px solid #292929;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.imgErro, .imgSucesso{
+    height: 60px;
+    width: 60px;
+    background-image: url(../imagens/icones_erros/alert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    margin-right: 10px;    
+}
+
+.imgSucesso{
+    background-image: url(../imagens/icones_erros/done3.png);
+}
+
+.MGS h1{
+    height: 60px;
+    width: 400px;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.textoErro{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    box-sizing: border-box;   
+    text-align: center;
+    
+}
+
+/* ======================  CONTEUDO DO SITE ===============*/
+
+#containerConteudo{
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+iframe{
+    height: 320px;
+    width: 470px;
+}
+
+.TITULO{
+    height: 90px;
+    width: 100%;
+    background-color: #e8790b;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 24px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+:root{
+    --menuColor: #ff9900;
+    --corPrimaria: #fcba03;
+    --corSecundaria: #a19e97;
+    --corTexto: #000;
+    --black: #000;
+    --white: #fff;
+    --blackTransparent: rgba(0,0,0,0.6);
+}
+
+/* ************* MENU **********/
+
+@media screen and (min-device-width:1300px){
+    
+/*    BLOQUEADOS    */
+    #containerMenuMobile{
+        display: none;
+    }   
+    
+#containerMenuLogo{
+    display: none;
+}
+    
+#ContainerSubMenuMobile{
+     display: none;   
+}
+
+#subMenuMobile{
+     display: none;   
+}    
+    
+.container{
+    width: 1400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+/*    background-color: #a6a49f;*/
+}
+    
+    
+#containerMenu{
+    height: 100px;
+    width: 100%;
+    background-color: #031321;
+/*    background-color: #d35400;*/
+    position: fixed;
+    
+}
+
+/* ************** LOGO **************/
+
+#logo{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+    box-sizing: border-box;
+/*    background-color: orange;*/
+    box-sizing: border-box;
+    padding-top: 150px;
+    background-image: url(../imagens/logo/HILLVALEY.png);
+    background-size: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    
+}
+
+#containerLinks{
+    height: 200px;
+    width: 270px;
+    margin-top: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#inicio{
+    height: 120px;
+    width: 120px;
+    background-color: #524a49;
+    border-radius: 50%;
+    float:left; 
+    margin-top: 70px;
+    background-image: url(../imagens/logo/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    box-sizing: border-box;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#sistemaInternoLogo{
+    height: 120px;
+    width: 120px;
+    background-color: #524a49;
+    border-radius: 50%;
+    margin-top: 10px;
+    float:right;
+    background-image: url(../imagens/logo/chip.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    box-sizing: border-box;
+}
+
+.efeitoRoda{
+    border: 6px solid rgb(0,0,0,0.0);
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.efeitoRoda:hover{
+    border: 6px solid rgb(0,0,0,0.2);
+    border-left-color: darkblue;
+    transition: 1s;
+    transition: 0.3s;
+    animation: spin linear 0.8s;
+}
+
+@keyframes spin{
+    to {transform: rotate(360deg);}
+}
+
+#logo:hover > #containerLinks{
+    opacity: 1;
+    visibility: visible;
+    transition: 800ms;
+}
+
+/* ************** MENU ***********/
+
+#menu{
+    height: 50px;
+    width: 830px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px; 
+    
+}
+
+#itensMenu{
+    height: inherit;
+    width: 100%;
+    
+}
+
+#widthCuriosidades, #widthEmpresa, #widthPromocao, #widthloja, #widthProdutos, #widthContato {
+    height: 50px;
+    margin-right: 9px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+     
+}    
+
+.efeitoMenu{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    font-family: comic sans ms;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: auto;
+    
+}    
+    
+.efeitoMenu:before{
+    position: absolute;
+    content: "";
+    height: inherit;
+    width: 50%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5));  
+    top: 0;
+    bottom: 0;
+    transform: skew(-45deg);
+    left: -450px;
+    
+}
+
+.efeitoMenu:hover::before{
+    transition: .9s;
+    left: 450px;
+}
+    
+.efeitoMenu a{
+    color: #fff;
+}   
+
+/* *********** LOGIN ************/
+
+#containerForm{
+    height: 60px;
+    width: 370px;
+    float: left;
+    margin-top: 20px;
+/*    background-color: orange;*/
+}
+
+.containerInput{
+    height: 60px;
+    width: 160px;
+    text-align: left;
+    color: #fff;
+    font-family: "comic sans ms", "arial";
+    margin-right: 10px;
+    float: left;
+}
+
+.confgInput{
+    height: 25px;
+    width: 150px;
+
+}
+
+#botao{
+    height: 30px;
+    width: 30px;
+    margin-top: 23px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -15px;
+}
+
+#img{
+    height: 500px;
+    width: 100%;
+    background-color: #8395a7;
+    background-image: url(../imagens/inicio/header/header2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ************ redes sociais ********** */
+#containerRedes{
+    height: 500px;
+    width: 100px;
+    position: fixed;
+    margin-top: -90px;
+    margin-left: 1400px;
+}
+
+#facebook, #whatsapp, #instagram {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    background-image: url(../imagens/redes_sociais/facebook.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#whatsapp{
+       background-image: url(../imagens/redes_sociais/whatsapp.png); 
+}
+
+#instagram{
+       background-image: url(../imagens/redes_sociais/instagram.png); 
+}
+
+
+/* ********** roda pé ***********/
+
+footer{
+    height: 130px;
+    width: 100%;
+    background-color: #031321;
+}
+
+#containerSistemaInterno{
+    height: 130px;
+    width: 220px;
+    float: left; 
+    padding-top: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#sistemaInterno{
+    height: 50px;
+    width: 190px;
+    border: solid 2px #000;
+    background-color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "comic sans ms" "arial";
+    font-size: 24px;
+    color: #000;
+}
+
+#containerEndereco{
+    height: 55px;
+    width: 750px;
+    float: left;
+    padding-top: 75px;
+    padding-left: 110px;
+    
+}
+
+#endereco{
+    height: 40px;
+    width: 690px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+    font-family: "comic sans ms" "arial";
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    
+}
+
+#containerAPP{
+    height: 130px;
+    width: 320px;
+    float: left;
+}
+
+#imagemAPP{
+    height: 70px;
+    width: 60px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-image: url(../imagens/roda_pe/baixar2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#baixarAPP{
+    height: 43px;
+    width: 180px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-top: 50px;
+    border: 2px solid #000;
+    float: left;
+    padding-top: 17px;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 24px;
+    color: #000;
+    
+}
+    
+}
+
+/************* testes *************** */
+
+@media screen and (max-device-width:780px){
+   
+/*   BLOQUEADOS  */
+    
+#containerLinks{
+    display: none;
+}
+
+#containerForm{
+    display: none;
+}
+        
+#menu{
+    display: none;    
+}  
+
+/*   codigo  */
+    
+.container{
+    width: 100%; 
+    height: inherit;
+}
+    
+#containerMenu{
+    height: 100px;
+    width: 100%;
+    background-color: #031321;
+    position: relative;
+}
+    #containerSubMenu{
+        display: none;
+    }
+        
+    #logo{
+        display: none;    
+    }
+
+    #containerMenuPrincipalmobile{
+        float: left;
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+    }
+        
+    #containerMenuMobile{
+        height: 200px;
+        width: 100%;
+        margin-right: 20px;
+    }
+        
+     #containerSubMenuMobile{
+        float: left;           
+        height: 100px;
+        width: 100px;
+    }     
+    
+    .itensSubMenu{
+        min-height: 50px;
+        height: auto;
+        width: 500px;
+        background: #031321;
+        float: left;
+    }
+
+    #iconeSubMenu{
+        height: 100px;
+        width: 100px;
+        float: right;
+        background: #fff;
+        background-image: url(../imagens/menuMobile/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: border-box; 
+        background-size: 70px;
+        border-radius: 50%;    
+    }
+    
+/* ************** LOGO **************/
+
+h2{
+    color: #fff;
+}
+
+#containerMenuMobile{
+    height: inherit;
+    width: 100px;
+    float: left;
+}
+
+#menuMobile{
+    min-height: 100px;
+    height: auto;
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    display: none;
+}
+
+.itensMenuMobile{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #031321;
+    display: flex;
+    align-items: center;
+    font-family: comic sans ms;
+    font-size: 3em;
+}
+    
+#containerSubMenuMobile{
+    min-height: 80px;
+    height: auto;
+    width: 100px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #031321;
+    font-family: comic sans ms;
+    font-size: 3em;
+    float: left;
+}
+    
+#containerSubMenuMobile h2{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    text-align: left;
+} 
+
+#subMenuMobile{
+    min-height: 50px;
+    width: 100%;
+    color: #fff;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#containerRSMobile{
+    height: 100px;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#iconeMenuMobile{
+    height: inherit;
+    width: 100%;
+    border-radius: 50%;
+    background-image: url(../imagens/menuMobile/icone.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box; 
+}
+
+#faceMobile, #whatsMobile, #instaMobile{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-right: 10px;
+    float: left;
+    background-image: url(../imagens/redes_sociais/facebook.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box; 
+}
+
+
+#whatsMobile{
+    background-image: url(../imagens/redes_sociais/whatsapp.png);
+
+}
+
+#instaMobile{
+    background-image: url(../imagens/redes_sociais/instagram.png);
+
+}    
+
+    
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    border-radius:50%;
+    padding-top: 10px;
+    background-image: url(../imagens/logo/HILLVALEY.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    
+    
+}
+
+#img{
+    height: 400px;
+    width: 100%;
+    background-color: #8395a7;
+    background-image: url(../imagens/inicio/header/header2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+/* ************ redes sociais ********** */
+#containerRedes{
+    height: 500px;
+    width: 100px;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 1400px;
+}
+
+#facebook, #whatsapp, #instagram {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    background-image: url(../imagens/redes_sociais/facebook.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#whatsapp{
+       background-image: url(../imagens/redes_sociais/whatsapp.png); 
+}
+
+#instagram{
+       background-image: url(../imagens/redes_sociais/instagram.png); 
+}
+
+
+/* ********** roda pé ***********/
+
+footer{
+    min-height: 100px;
+    height: auto;
+    width: 100%;
+    background-color: #031321;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#containerSistemaInterno{
+    height: 140px;
+    width: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+    display: none;
+    
+}
+
+#containerEndereco{
+    height: 55px;
+    width: 100%;
+}
+
+#endereco{
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: "comic sans ms" "arial";
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#containerAPP{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+#imagemAPP{
+    height: 50px;
+    width: 60px;
+    float: left;
+    
+    background-image: url(../imagens/roda_pe/baixar2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#baixarAPP{
+    height: 43px;
+    width: 180px;
+    background-color: #fff;
+    margin-left: 10px;
+    border: 2px solid #000;
+    float: left;
+    padding-top: 17px;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 1.5em;
+    color: #000;
+    
+}   
+}

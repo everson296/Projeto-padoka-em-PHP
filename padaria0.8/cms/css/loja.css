@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --altura: 350px;
+    --largura: 470px;
+}
+
+#containerConteudo{
+    display: block;
+}
+
+#containerCadastroLoja{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid #000; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #b0b0b0;  
+    margin-bottom: 50px;
+
+}
+
+/* ************************ INPUT FILE ********************** */
+
+#configFile{
+    height: var(--altura);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    border-right: 2px solid #292929;
+}
+
+label{
+    min-height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    width: 90%;
+    border: 3px solid #292929;
+    border-radius: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    
+}
+
+label:hover{
+    color: #f58b00;
+    transition: .4s;
+    background: #292929;
+}
+
+#imagemLoja{
+    min-height: 0px;
+    max-height: 200px;
+    min-width: 0px;
+    max-width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat; 
+    border: 2px solid #292929;
+}
+
+#imagemLoja img{
+    min-height: 0px;
+    max-height: 198px;
+    min-width: 0px;
+    max-width: 198px;
+}
+
+#configTxt{
+    height: var(--altura);
+    width: 630px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#configTxt input[type="text"], #configTxt select{
+    height: 40px;
+    width: 90%;
+    border-radius: 40px;
+    border: 2px solid #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 20px;
+    box-sizing: border-box; 
+}
+
+#configTxt select{
+    cursor: pointer;
+}
+
+#configTxt input[type="text"]:hover, #configTxt select:hover{
+    border: 2px solid #f58b00;
+    transition: .5s;
+}
+
+#configBtn{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    
+}
+
+#configBtn input[type="submit"]{
+    height: 40px;
+    width: auto;
+    border: 2px solid #f58b00;
+    border-radius: 40px;
+    text-transform: uppercase;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    color: #f58b00;
+    outline: none;
+}
+
+#configBtn input[type="submit"]:hover{
+    background: #f58b00;
+    color: #292929;
+    transition: .5s;
+}
+
+/*          =================== Dados loja ================== */
+
+#cabecalhoLoja{
+    height: 50px;
+    width: 100%;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #f58b00;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+table{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table tr{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    
+}
+
+table tr:nth-child(1) td{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    height: 50px;
+}
+
+table tr td{
+    min-height: 50px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    border: 2px solid #f58b00;
+    font-size: 1.4em;
+    font-family: arial;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.containerAcao{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgApagar, .imgEditar, .imgVizualizar{
+    height: 45px;
+    width: 50px;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.imgEditar{
+    background-image: url(../img/edit.png);
+}
+
+.imgVizualizar{
+    background-image: url(../img/search.png);
+}
+
+.imgApagar:hover{
+    background-image: url(../img/trash_orange.png);
+    transition: .3s;
+}
+
+.imgEditar:hover{
+    background-image: url(../img/edit_orange.png);
+    transition: .3s;
+}
+
+.imgVizualizar:hover{
+    background-image: url(../img/search_orange.png);
+    transition: .3s;
+}
+
+.configCheboxTable{
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.configCheboxTable input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #51ff00, #92f266);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.configCheboxTable input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #ff0000, #f76868);
+}
+
+.configCheboxTable input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+
+.configCheboxTable input:checked[type="checkbox"]::before{
+    left: 30px;
+}
+
+/*          =================== MODAL LOJA ================== */
+
+#containerModalLojas{
+    min-height: 50px;
+    height: auto;
+    width: 1200px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#cabecalhoModalLoja, #tituloLoja{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#tituloLoja{
+    width: auto;
+    font-size: 1.6em;
+    color: #f58b00;
+    margin-left: 20px;
+}
+
+#containerConteudoModalLoja{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#containerLeft{
+    min-height: 50px;
+    width: 800px;
+    background: red;
+    overflow: hidden;
+}
+
+#containerRight{
+    min-height: 50px;
+    width: 400px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+#containerRight img, #containerRight iframe{
+    height: 220px;
+    width: 350px;
+    border: 2px solid #000;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.containerDadosLoja{
+    min-height: 50px;
+    width: 600px;
+    background: green;
+    
+    margin-bottom: 10px;  
+    
+    overflow: hidden;
+}
+
+.containerDadosLoja p{
+    
+}
+
+.containerDadosLoja div{
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

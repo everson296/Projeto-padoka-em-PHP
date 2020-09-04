@@ -1,0 +1,419 @@
+/*
+    cor-primaria:    #e8790b;
+    cor-sevundaria:    #af4b00
+    cor-adjacente:    #ffa945;
+*/
+
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, li{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000; 
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #474a48;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.TITULO{
+    height: 90px;
+    width: 100%;
+    background-color: #e8790b;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 24px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+:root{
+    --corPrimaria: #fcba03;
+    --corSecundaria: #a19e97;
+    --corTexto: #000;
+    --div:#ad7e17;
+    --div2:#AD9e17;
+    --black: #000;
+    --white: #fff;
+}
+
+/* ************* MENU **********/
+
+#containerMenu{
+    height: 100px;
+    width: 100%;
+    background-color: #031321;
+    position: fixed;
+}
+
+header{
+    margin-bottom: 100px;
+}
+
+/* ************** LOGO **************/
+
+#logo{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+    background-color: orange;
+    box-sizing: border-box;
+    padding-top: 150px;
+    
+}
+
+#containerLinks{
+    height: 200px;
+    width: 270px;
+/*    background-color: rgba(0,0,0,0.5);*/
+    margin-top: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#inicio{
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    border-radius: 50%;
+    float:left; 
+    margin-top: 70px;
+    
+}
+
+#inicio:hover{
+    border: 6px solid rgb(0,0,0,0.1);
+    border-left-color: darkblue;
+    transition: 0.3s;
+    animation: spin linear 0.8s;
+}
+
+#sistemaInterno{
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: 10px;
+    float:right;
+}
+
+#sistemaInterno:hover{
+    border: 6px solid rgb(0,0,0,0.1);
+    border-left-color: red;
+    transition: 0.3s;
+    animation: spin linear 0.8s;
+}
+
+@keyframes spin{
+    to { transform: rotate(360deg);}
+}
+
+#logo:hover > #containerLinks{
+    opacity: 1;
+    visibility: visible;
+    transition: 800ms;
+}
+
+/* ************** MENU ***********/
+
+#menu{
+    height: 50px;
+    width: 830px;
+/*    background-color: orange;*/
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#itensMenu{
+    height: inherit;
+    width: 100%;
+}
+
+#widthCuriosidades, #widthEmpresa, #widthPromocao, #widthloja, #widthProdutos, #widthContato {
+    height: 50px;
+    margin-right: 9px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    background-color: aliceblue;
+    list-style: none;
+    font-family: comic sans ms;
+    
+}
+
+li:hover{
+    color: #255784;
+    background: linear-gradient(90deg,#ffb700,#ca5bd4);
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+li span{
+    position: absolute;
+    display: block;
+}
+
+li span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:  linear-gradient(90deg,transparent,#2196f3);
+}
+
+li:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+li span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:  linear-gradient(270deg,transparent,#2196f3);
+}
+
+li:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+li span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:  linear-gradient(180deg,transparent,#2196f3);
+}
+
+li:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+li span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:  linear-gradient(360deg,transparent,#2196f3);
+}
+
+li:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* *********** LOGIN ************/
+
+#containerForm{
+    height: 60px;
+    width: 370px;
+    float: left;
+    margin-top: 20px;
+/*    background-color: orange;*/
+}
+
+.containerInput{
+    height: 60px;
+    width: 160px;
+    text-align: left;
+    color: #fff;
+    font-family: "comic sans ms", "arial";
+    margin-right: 10px;
+    float: left;
+}
+
+.confgInput{
+    height: 25px;
+    width: 150px;
+
+}
+
+#botao{
+    height: 30px;
+    width: 30px;
+    margin-top: 23px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -15px;
+}
+
+#img{
+    height: 500px;
+    width: 100%;
+    background-color: darkorange;
+}
+
+
+/* ************ redes sociais ********** */
+#containerRedes{
+    height: 500px;
+    width: 100px;
+    position: fixed;
+    margin-left: 1400px;
+}
+
+#facebook, #whatsapp, #instagram {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    background-image: url(../imagens/redes_sociais/facebook.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#whatsapp{
+       background-image: url(../imagens/redes_sociais/whatsapp.png); 
+}
+
+#instagram{
+       background-image: url(../imagens/redes_sociais/instagram.png); 
+}
+
+
+/* ********** roda pé ***********/
+
+footer{
+    height: 130px;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+#containerSistemaInterno{
+    height: 130px;
+    width: 220px;
+    float: left; 
+    padding-top: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#sistemaInterno{
+    height: 50px;
+    width: 190px;
+    border: solid 2px #000;
+    background-color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "comic sans ms" "arial";
+    font-size: 24px;
+    color: #000;
+}
+
+#containerEndereco{
+    height: 55px;
+    width: 750px;
+    float: left;
+    padding-top: 75px;
+    padding-left: 110px;
+    
+    
+}
+
+#endereco{
+    height: 40px;
+    width: 690px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+    font-family: "comic sans ms" "arial";
+    font-size: 24px;
+    
+}
+
+#containerAPP{
+    height: 130px;
+    width: 320px;
+    float: left;
+}
+
+#imagemAPP{
+    height: 70px;
+    width: 60px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-image: url(../imagens/APP/loja-de-jogos.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#baixarAPP{
+    height: 43px;
+    width: 180px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-top: 50px;
+    border: 2px solid #000;
+    float: left;
+    padding-top: 17px;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 24px;
+    color: #000;
+    
+}
+
+/* ******** Promocao *********** */
+
+#containerConteudo{
+    min-height: 150px;
+    height: auto;
+    width: 100%;
+    background-color: gray;
+    padding: 50px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

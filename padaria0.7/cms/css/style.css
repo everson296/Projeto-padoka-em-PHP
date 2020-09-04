@@ -1,0 +1,735 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+h1{
+    color: #000;
+}
+
+body{
+/*    background: #232224;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+}
+
+#containerModalInformacoes{
+    min-height: 50px;
+    height: auto;
+    width: 300px;
+    background: #fff;
+    margin-right: 50px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: none;
+    transition: 1s;
+}
+
+#cabecalhoModal{
+    height: 80px;
+    width: 100%;
+    background: #202121;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: arial;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#containerBusca{
+    height: 110px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #000;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+#containerBusca select{
+    height: 35px;
+    width: 90%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    border-radius: 40px;
+    border: 2px solid #000;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+#containerBusca input[type=submit]{
+    height: 30px;
+    width: 170px;
+    font-size: 1.2em;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: #b5b5b5;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+#containerBusca input[type=submit]:active{
+    box-shadow: 1px 1px 1px 10px red, 0 1px 10px red;
+    transition: 0.1s;
+}
+
+#containerResultadoBusca{
+    height: 200px;
+    width: 100%;
+    background: rgb(00,0,0,0.5);
+    border-bottom-left-radius: 17px; 
+    border-bottom-right-radius: 17px; 
+}
+
+.containerConteudo{
+    height: 800px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid #000;
+}
+
+#cabecalho{
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 2px solid #000;
+    background: #202121;
+    
+}
+
+#texto, #containerImg{
+    height: inherit;
+    width: 600px;
+/*    background: orange;*/
+    border-top-left-radius: 30px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+#texto h1{
+    color: #fff;
+}
+
+#containerImg{
+    width: 400px;
+/*    background-color: orange;*/
+    border-top-right-radius: 30px;
+    border-top-left-radius: 0;
+}
+
+#img{
+    height: 120px;
+    width: 210px;
+/*    background-color: aqua;*/
+    background-image: url(../img/HILLVALEY.png);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#escolhas{
+    height: 130px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.containerFuncao{
+    height: inherit;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    margin-right: 30px;
+}
+
+
+.imgFuncao{
+    height: 85px;
+    width: 85px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-image: url(../img/person.png);
+    background-size: 70px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.containerFuncao:nth-child(1) .imgFuncao{
+    background-image: url(../img/settings.png);
+}
+
+.containerFuncao:nth-child(2) .imgFuncao{
+    background-image: url(../img/support.png);
+}
+
+.containerFuncao:nth-child(3) .imgFuncao{
+    background-image: url(../img/app.png);
+}
+
+
+
+.nomeFuncao{
+    height: 35px;
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.containerBoasVindas{
+    height: inherit;
+    width: 300px;
+    float: right;
+    
+}
+
+.textoBoasVindas{
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.textoBoasVindas:nth-child(2){
+    text-align: end;
+    padding-bottom: 0;
+    padding-top: 25px;
+    box-sizing: border-box;
+    
+}
+
+#conteudo{
+    height: 470px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+
+#conteudo table{
+    min-height: 50px;
+    height: 40px;
+    width: 100%;
+/*    background-color: #434544;*/
+    border: none;
+}
+
+#admFaleConosco{
+    display: none;
+}
+
+#conteudo table tr{
+    height: 40px;
+    width: 100%;
+}
+
+#conteudo table tr td{
+    height: 40px;
+    width: 100px;
+    border: 1px solid #000;
+    background-color: #808080;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: arial, comic sans ms;
+    font-weight: bold;
+}
+
+#conteudo table tr:nth-child(1) td{
+    font-size: 1.5em;
+    text-transform: none;
+    font-weight: none;
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.tblImg{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgExcluir, .imgExibir, .imgEditar{
+    height: 50px;
+    width: 50px;
+    float: right;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+.imgExibir{
+    background-image: url(../img/search.png);
+}
+
+.imgEditar{
+    background-image: url(../img/edit.png);
+}
+
+footer{
+    height: 44px;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer h1{
+    color: #000;
+    font-size: 1.5em;
+    font-family: comic sans ms;
+    
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.7);
+    position: fixed;
+    z-index: 999;
+    padding-top: 5vh;
+    box-sizing: border-box;
+    display: none;
+}
+
+.modalConteudo{
+    height: 90vh;
+    width: 130vh;
+/*    background: #c9c9c9;*/
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#cabecalhoModalVisualizar{
+    height: 70px;
+    width: 100%;
+    background: #2b2b2b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#textoModal{
+    height: inherit;
+    width: 1030px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: comic sans ms;
+    
+}
+
+#fecharModal{
+    height: inherit;
+    width: 70px;
+    float: left;
+    background: red;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #fff;
+    font-family: comic sans ms;
+    cursor: pointer;
+}
+
+#containerTableModal{
+    min-height: 50px;
+    width: 1100px;
+}
+#containerTableModal table{
+    min-height: 40px;
+    width: 100%;
+    border: 1px solid #000; 
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+#containerTableModal table tr{
+    height: 50px;
+    width: auto;
+}
+
+#containerTableModal table tr td{
+    height: inherit;
+    width: auto;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid #000;  
+    font-family: arial;
+    border-radius: 40px;
+}
+
+#containerTableModal table tr td:nth-child(1){
+    width: 310px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#containerCadastroUsuario{    
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#containerCadastros{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.containerCadastroNiveis h2{
+    height: 40px;
+    width: auto;
+    background: #292929;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: arial;
+    font-size: 1.5em;
+    color: #fff;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    cursor: pointer;
+}
+
+.imgCadastro{
+    height: 40px;
+    width: 50px;
+    float: left;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 2px solid #000;
+    background-image: url(../img/friend.png);
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+.containerCadastroNiveis:nth-child(2) .imgCadastro{
+    background-image: url(../img/level.png);
+}
+
+#configChebox{
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#configChebox input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #51ff00, #92f266);
+    outline: none; 
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+#configChebox input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #ff0000, #f76868);
+    box-shadow: 0 0 2px #6dd1ff,0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+
+#configChebox input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+
+#configChebox input:checked[type="checkbox"]::before{
+    left: 30px;
+}
+
+#containerCadastroConteudo{
+    height: 100%;
+    width: 100%; 
+    overflow: auto;
+}
+
+#containerEscolherConteudo{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.escolherConteudo{
+    height: 41px;
+    width: 300px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: arial;
+    color: #d1513d;
+    border: 3px solid #d1513d;
+    background: #292929;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .5s;
+
+}
+
+.escolherConteudo:hover{
+    color: #292929;
+    border: 3px solid #292929;
+    background: #d1513d;
+    transition: .5s;
+}
+
+
+#conteudoCuriosidades{
+    min-height: 408px;
+    height: auto;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: arial;
+    background: #fff;
+    background: #292929;
+
+}
+
+#conteudoCuriosidades form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#containerCuriosidadesImg{
+    height: 408px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #000;
+}
+
+.imgPrincipalCuriosidade{
+    height: 140px;
+    width: 90%;
+    background: orange;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.imgPrincipalCuriosidade:nth-child(2){
+    height: 100px;
+}
+
+#containerImgCuriosidadeMenor{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#containerImgCuriosidadeMenor input{
+    height: 70px;
+    width: 100px;
+    background: pink;
+    border-radius: 10px;
+}
+
+
+#containerCuriosidadesTexto{
+    height: 408px;
+    width: 700px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+#containerIMGcuriosidade{
+    height: 210px;
+    width: 210px;
+    background-color: aqua;
+    float: left;
+}
+
+#file{
+    height: 140px;
+    width: 200px;
+    background: orange;    
+    border-radius: 15px;   
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+#containerTXTcuriosidade{
+    height: 50px;
+    width: 400px;
+    float: left; 
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: deeppink;
+    margin-bottom: 10px;
+}
+
+#containerCuriosidadesTexto textarea{
+    height: 150px;
+    width: 450px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: arial;
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+.txtCuriosidade{
+    height: 30px;
+    width: 190px;
+    border-radius: 40px;
+    font-size: 0.7em;
+    font-family: arial;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    outline: none;
+}
+
+#configButton{
+     height: 150px;
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#configButton input{
+    height: 50px;
+    width: 200px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

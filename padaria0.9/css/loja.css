@@ -1,0 +1,223 @@
+@media screen and (min-device-width:1300px){
+.efeitoMenu #corLoja{
+    color: var(--menuColor);
+}
+
+#containerConteudo{
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.containerCidade{
+    min-height: 480px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: comic sans ms;
+    font-size: 1.8em;
+}
+
+.infoCidade{
+    min-height: 400px;
+    height: auto;
+    width: 100%;
+    background-color: #474a48;
+    padding: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.imgLoja{
+    height: 320px;
+    width: 466px;
+    margin-right: 20px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 2px solid #292929;
+    border-radius: 15px;
+
+}
+
+.imgLoja figure {
+    height: 320px;
+    width: 470px;
+}  
+    
+.imgLoja figure img{
+    height: 320px;
+    width: 470px;
+}    
+
+.infoLoja{
+    min-height: 50px;
+    height: auto;
+    width: 380px;
+    margin-right: 20px;
+    float: left;
+    overflow: hidden;
+}
+
+.nome, .gerente, .rua, .bairro, .numero, .E_mail{
+    min-height: 45px;
+    height: auto;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 24px;
+    color: #36332f;
+    word-break: break-all;
+}
+
+.googleMaps{
+    height: 320px;
+    width: 466px;
+    background-color: orange;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #292929;
+    border-radius: 15px;
+}
+
+#foto1{
+    background-image: url(imagens/loja/unnamed.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+
+}
+
+}
+
+@media screen and (max-device-width:780px){
+.efeitoMenu #corLoja{
+    color: var(--menuColor);
+}
+
+#containerConteudo{
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+/*    background-color: gray;*/
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.containerCidade{
+    min-height: 480px;
+    height: auto;
+    width: 100%;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: comic sans ms;
+}
+
+.infoCidade{
+    min-height: 400px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background: #474a48;
+    overflow: hidden;
+}
+
+.imgLoja{
+    height: 320px;
+    width: 466px;
+    margin-right: 20px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 2px solid #292929;
+    border-radius: 15px;
+}
+
+    
+.imgLoja figure {
+    height: 320px;
+    width: 470px;
+}  
+    
+.imgLoja figure img{
+    height: 320px;
+    width: 470px;
+}    
+
+.infoLoja{
+    min-height: 320px;
+    height: auto;
+    width: 380px;
+    float: left;
+    overflow: hidden; 
+}
+
+.nome, .gerente, .rua, .bairro, .numero, .E_mail{
+    min-height: 45px;
+    height: auto;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 24px;
+    color: #36332f;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.googleMaps{
+    display: none;
+}
+
+    #foto1{
+    background-image: url(imagens/loja/unnamed.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+
+}
+
+}

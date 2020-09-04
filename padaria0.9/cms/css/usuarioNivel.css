@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, rgba(22, 162, 186, 0.2), rgba(255, 153, 0, 0.2)), url(../img/fundo.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#containerCadastro{
+    min-height: 50px;
+    width: 700px;
+    background: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cabecalho{
+    height: 80px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #f58b00;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+#conteudoUsuario{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conteudoUsuario input, #conteudoUsuario select{
+    height: 40px;
+    width: 90%;
+    border: 2px solid #000;
+    border-radius: 40px;
+    font-size: 1.5em;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#conteudoUsuario input:hover, #conteudoUsuario select:hover{
+    border-color: #f58b00;
+    transition: .3s;
+}
+
+#containerBTN{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#containerBTN input, #containerBTN a div{
+    height: 40px;
+    width: auto;
+    border: 2px solid #f58b00;
+    background: #292929;
+    color: #f58b00;
+    font-size: 1.2em;
+    font-family: arial;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 50px;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    outline: none;
+    user-select: none;
+}
+
+#containerBTN input:hover, #containerBTN a div:hover{
+    background: #f58b00;
+    color: #292929;
+    transition: .8s;
+}
+
+/* ---------------------- CSS DO NÍVEL ---------------- */
+
+#containerCadastroNivel{
+    min-height: 50px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conteudoNivel{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#configTxt{
+    height: 50px;
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#configTxt input{
+    height: 40px;
+    width: 90%;
+    border: 2px solid #000;
+    border-radius: 40px;
+    font-size: 1.5em;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    outline: none;
+}
+
+#configTxt input:hover{
+    border-color: #f58b00;
+    transition: .3s;
+}
+
+
+#configCheckbox{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#configCheckbox div{
+    height: inherit;
+    width: 200px;
+    margin-right: 1px;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#configCheckbox div input{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px #353535, 0 0 0 3px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    margin-right: 5px;
+}
+
+#configCheckbox div input:checked{
+    background: linear-gradient(0deg, #f58b00, #b36715);
+    box-shadow: 0 0 2px #353535, 0 0 0 3px #3e3e3e, 0 0 0 4px #f58b00, 0 5px 20px #db7a12;
+}
+
+#containerDadosNiveis{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    margin-top: 50px;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#containerDadosNiveis table{
+    width: 100%;
+    min-height: 45px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#containerDadosNiveis table tr{
+    width: auto;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+#containerDadosNiveis table tr td{
+    height: inherit;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border: 2px solid #f58b00;
+    font-size: 1.1em;
+    font-family: arial;
+    color: #292929;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#containerDadosNiveis table tr:nth-child(1) td{
+    font-size: 1.5em;
+    font-weight: bold;
+    outline: none;
+    user-select: none;
+}
+
+.containerAcao{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgApagar, .imgEditar{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.imgEditar{
+    background-image: url(../img/edit.png);
+}
+
+.configCheboxTable{
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.configCheboxTable input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #51ff00, #92f266);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.configCheboxTable input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #ff0000, #f76868);
+}
+
+.configCheboxTable input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+
+.configCheboxTable input:checked[type="checkbox"]::before{
+    left: 30px;
+}

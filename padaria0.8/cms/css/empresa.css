@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#containerConteudo{
+    display: block;
+}
+
+/* ******************** FORM DA IMAGEM ********************** */
+
+#configFile{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    border-bottom: 2px solid #292929;
+}
+
+label{
+    min-height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 3px solid #292929;
+    border-radius: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+label:hover{
+    color: #f58b00;
+    transition: .4s;
+    background: #292929;
+}
+
+#imagemEmpresa{
+    min-height: 0px;
+    max-height: 250px;
+    min-width: 0px;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat; 
+    border: 2px solid #292929;
+}
+
+#imagemEmpresa img{
+    min-height: 0px;
+    max-height: 248px;
+    min-width: 0px;
+    max-width: 348px;
+}
+
+#imgFixa{
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: 230px;
+    max-width: 240px;
+    border-radius: 15px;
+    border: 2px solid #292929;
+    top: 200px;
+    left: 10px;
+}
+
+/* ******************** DADOS DA EMPRESA ********************** */
+
+#containerDadosEmpresa{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 2px solid #292929;
+}
+
+.cabecalhoEmpresa{
+    height: 60px;
+    width: 100%;
+    background: #292929;
+    color: #f58b00;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: arial;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#containerDadosEmpresa textarea{
+    height: 250px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 2px solid #292929;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.4em;
+    font-family: arial;
+    padding: 10px;
+    box-sizing: border-box;    
+    resize: none;
+}
+
+#configText{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#configText input[type="text"]{
+    height: 40px;
+    width: 90%;
+    border: 2px solid #292929;
+    border-radius: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family: arial;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#congifBTN{
+    height: 60px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#congifBTN input[type="submit"]{
+    height: 40px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #f58b00;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: #f58b00;
+    cursor: pointer;
+    outline: none;
+}
+
+#congifBTN input[type="submit"]:hover{
+    border: 2px solid #f58b00;
+    background: #f58b00;
+    color: #292929;
+    transition: .5s;
+}

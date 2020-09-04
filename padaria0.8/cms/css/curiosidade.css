@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#containerConteudo{
+    display: block;
+}
+
+/* ********************* FORM IMAGEM *************************** */
+
+#containerCadastroImagens{
+    min-height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #292929;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.cabecalhoCuriosidade{
+    height: 50px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: arial;
+    color: #f58b00;    
+}
+
+.contianerCadastroImagem{
+    height: 300px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #292929;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+label{
+    min-height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #292929;
+    border-radius: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+label:hover{
+    color: #f58b00;
+    transition: .4s;
+    background: #292929;
+}
+
+.imagemCuriosidade{
+    min-height: 0px;
+    max-height: 150px;
+    min-width: 0px;
+    max-width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat; 
+    border: 2px solid #292929;
+}
+
+.imagemCuriosidade img{
+    min-height: 0px;
+    max-height: 248px;
+    min-width: 0px;
+    max-width: 348px;
+}
+
+#imgFixa{
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: 230px;
+    max-width: 240px;
+    border-radius: 15px;
+    border: 2px solid #292929;
+    top: 200px;
+    left: 10px;
+    overflow: hidden;
+}
+
+#containerDadosImagens{
+    min-height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #292929;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+#configImg{
+    min-height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #292929;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#configImg img{
+    height: 130px;
+    width: 220px;
+    border-radius: 15px;
+    border: 2px solid #292929;
+}
+
+/* ********************* CADASTRO DE CURIOSIDADE *************************** */
+
+
+
+
+
+
+
+
+
+/* ********************* BOTÃO IMAGENS *************************** */
+
+#congifBTN{
+    height: 60px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#congifBTN input[type="submit"]{
+    height: 40px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #f58b00;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: #f58b00;
+    cursor: pointer;
+    outline: none;
+}
+
+#congifBTN input[type="submit"]:hover{
+    border: 2px solid #f58b00;
+    background: #f58b00;
+    color: #292929;
+    transition: .5s;
+}

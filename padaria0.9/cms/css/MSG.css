@@ -1,0 +1,128 @@
+/* ==================  CAIXA DE ERRO  =============*/
+.containerMSG{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.fecharMSG{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.fecharMSG span{
+    border-radius: 50%;    
+    font-size: 8em;
+    font-family: comic sans ms;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    cursor: pointer;
+    user-select: none;
+}
+
+.fecharMSG span:hover{
+    transform: rotate(320deg);
+    transition: 1s;
+    color: #ff0000;
+}
+
+.MGS{
+    height: 300px;
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #292929;
+}
+
+.containerTituloErro{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 2px solid #292929;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.imgErro, .imgSucesso{
+    height: 60px;
+    width: 60px;
+    background-image: url(../../imagens/icones_erros/alert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    margin-right: 10px;    
+}
+
+.imgSucesso{
+    background-image: url(../../imagens/icones_erros/done3.png);
+}
+
+.MGS h1{
+    height: 60px;
+    width: 400px;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.textoErro{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    box-sizing: border-box;   
+    text-align: center;
+    
+}
+
+/* ================== CONTEUDO CMS =============*/

@@ -1,0 +1,202 @@
+/*
+    cor-primaria:    #3d3a32;
+    cor-sevundaria:    #292723
+    cor-adjacente:    #bf8817;
+*/
+
+body, h1, h2, h3, h4, h5, h6, p, div, ul, ol, li{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+/*    background-color: #000;*/  
+}
+
+li{
+    list-style: none;
+}
+
+section{
+/*    background-color: #EB7E20;*/
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* *********** inicio ******************* */
+
+#containerMenu{
+    height: 90px;
+    width: 100%;
+    background-color: #EB7E20;
+}
+
+#containerLogo, #menu{
+    height: 60px;
+    width: 120px;
+    background-color: #EB9620;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    
+}
+
+#menu{
+    height: 50px;
+    width: 820px;
+    margin-top: 25px;
+    
+}
+
+#menuItens{
+    height: inherit;
+    width: 100%;
+}
+
+.itensMenu{
+    height: inherit;
+    width: 120px;
+    float: left;
+    background-color: #000;
+    
+    color: #fff;
+    text-align: center;
+    font-family: "comic sans ms", "arial";
+    font-size: 24px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#produtoDoMes{
+    width: 200px;
+}
+
+#produtoDoMes:hover{
+    width: 210px;
+}
+
+#Curiosidades{
+    width: 160px;
+}
+
+#Curiosidades:hover{
+    width: 170px;
+}
+
+#loja{
+    width: 80px;
+}
+
+#loja:hover{
+    width: 90px;
+}
+
+#promocoes{
+    width: 130px;
+}
+
+#promocoes:hover{
+    width: 140px;
+}
+
+#contato{
+    width: 110px;
+}
+
+#contato:hover{
+    width: 120px;
+}
+
+.itensMenu:hover {
+    transition: 1s;
+    width: 130px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+#containerForm{
+    height: 60px;
+    width: 400px;
+    float: left;
+    margin-top: 15px;
+/*    background-color: aqua;*/
+}
+
+.containerInput{
+    height: 60px;
+    width: 160px;
+    text-align: left;
+    color: #fff;
+    font-family: "comic sans ms", "arial";
+    margin-right: 10px;
+    float: left;
+}
+
+.confgInput{
+    height: 25px;
+    width: 150px;
+
+}
+
+#botao{
+    height: 30px;
+    width: 30px;
+    margin-top: 23px;
+    border-radius: 5px;
+    border: none;
+    margin-left: -15px;
+}
+
+header{
+    height: 600px;
+    width: 100%;
+    background-color: #EB9620;
+    
+    background-image: url(../imagens/inicio.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;
+}
+
+#containerConteudo{
+    height: 1000px;
+    width: 100%;
+    background-color: gray;
+}
+
+footer{
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

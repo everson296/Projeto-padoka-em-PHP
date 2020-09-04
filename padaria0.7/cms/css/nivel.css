@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+
+body{
+/*    background: #232224;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+}
+
+.tblImg{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgExcluir, .imgExibir, .imgEditar{
+    height: 50px;
+    width: 50px;
+    float: right;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+.imgExibir{
+    background-image: url(../img/search.png);
+}
+
+.imgEditar{
+    background-image: url(../img/edit.png);
+}
+
+#containerCadastroNivelUsuario{
+    min-height: 50px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+/*    background: blue;*/
+}
+
+#containerCadastroNivel{
+    min-height: 50px;
+    height: auto;
+    width: 700px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin-bottom: 50px;
+}
+
+#cabecalhoCadastroNivel{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px; 
+}
+
+#containerDadosNivel{
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #000;
+}
+
+#cabecalhoDadosNivel{
+    height: 70px;
+    width: 100%;
+    background-color: #292929;
+    font-size: 2em;
+    font-family: arial;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    color: #fff;
+}
+
+#containerDadosNivel table{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+}
+
+#containerDadosNivel table tr{
+    height: 50px;
+    width: auto;
+}
+
+#containerDadosNivel table tr td{
+    height: inherit;
+    width: auto;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: arial;
+}
+
+#containerDadosNivel table tr:nth-child(1) td{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerText{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;  
+    flex-direction: column;
+    background: #fff;
+}
+
+.containerText input{
+    height: 40px;
+    width: 550px;
+    border: 2px solid #000;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.5em;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.containerCheckbox{
+    min-height: 50px;
+    width: 100%;
+    color: #000;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    background: #fff;
+}
+
+.containerCheckbox input{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px #353535, 0 0 0 3px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    margin-left: 30px;
+    margin-right: 5px;
+    
+}
+
+.containerCheckbox input:checked{
+    background: linear-gradient(0deg, #00eaff, #00eaff);
+    box-shadow: 0 0 2px #00eaff,0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+
+.containerBotao{
+    height: 70px;
+    width: 100%;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #292929;
+}
+
+.containerBotao input, .containerBotao #btnFecharNivel{
+    height: 45px;
+    width: auto;
+    border-radius: 40px;
+    border: 2px solid gray;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 20px;
+}
+
+
+#btnFecharNivel{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+#containerCadastroUsiario{
+    height: 100%;
+    width: 100%;
+}
+
+#configChebox{
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#configChebox input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #51ff00, #92f266);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+#configChebox input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #ff0000, #f76868);
+    box-shadow: 0 0 2px #6dd1ff,0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+}
+
+#configChebox input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+
+#configChebox input:checked[type="checkbox"]::before{
+    left: 30px;
+}

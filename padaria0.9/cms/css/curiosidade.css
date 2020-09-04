@@ -1,0 +1,511 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#containerConteudo{
+    display: block;
+}
+
+/* ********************* FORM IMAGEM *************************** */
+
+#configFile{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    border-bottom: 2px solid #292929;
+}
+
+label{
+    min-height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 3px solid #292929;
+    border-radius: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+label:hover{
+    color: #f58b00;
+    transition: .4s;
+    background: #292929;
+}
+
+#imagemCuriosidade{
+    min-height: 0px;
+    max-height: 250px;
+    min-width: 0px;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat; 
+    border: 2px solid #292929;
+}
+
+#imagemCuriosidade img{
+    min-height: 0px;
+    max-height: 248px;
+    min-width: 0px;
+    max-width: 348px;
+}
+
+/* ********************* CADASTRO DE CURIOSIDADE *************************** */
+
+#configText{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#configText input{
+    height: 40px;
+    width: 90%;
+    border: 2px solid #292929;
+    border-radius: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family: arial;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#configText textarea{
+    height: 200px;
+    width: 90%;
+    border: 2px solid #292929;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: arial;
+    resize: none;
+}
+
+#dataNome{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#dataNome input{
+    height: 40px;
+    width: 30%;
+    border: 2px solid #292929;
+    border-radius: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family: arial;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    outline: none;
+}
+
+/* ********************* BOTÃO IMAGENS *************************** */
+
+#congifBTN{
+    height: 60px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#congifBTN input[type="submit"]{
+    height: 40px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid #f58b00;
+    background: #292929;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: #f58b00;
+    cursor: pointer;
+    outline: none;
+}
+
+#congifBTN input[type="submit"]:hover{
+    border: 2px solid #f58b00;
+    background: #f58b00;
+    color: #292929;
+    transition: .5s;
+}
+
+/* ************************** DADOS CADASTRADOS ******************** */
+
+table{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table tr{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    
+}
+
+table tr:nth-child(1) td{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    height: 50px;
+}
+
+table tr td{
+    min-height: 50px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    border: 2px solid #f58b00;
+    font-size: 1.4em;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+
+.containerAcao{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgApagar, .imgEditar, .imgVizualizar{
+    height: 45px;
+    width: 50px;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.imgEditar{
+    background-image: url(../img/edit.png);
+}
+
+.imgVizualizar{
+    background-image: url(../img/search.png);
+}
+
+.imgApagar:hover{
+    background-image: url(../img/trash_orange.png);
+    transition: .3s;
+}
+
+.imgEditar:hover{
+    background-image: url(../img/edit_orange.png);
+    transition: .3s;
+}
+
+.imgVizualizar:hover{
+    background-image: url(../img/search_orange.png);
+    transition: .3s;
+}
+
+.configCheboxTable{
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.configCheboxTable input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #51ff00, #92f266);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.configCheboxTable input:checked[type="checkbox"]{
+    background: linear-gradient(0deg, #ff0000, #f76868);
+}
+
+.configCheboxTable input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+}
+
+.configCheboxTable input:checked[type="checkbox"]::before{
+    left: 30px;
+}
+
+/* ********************* MODAL CURIOSIDADE *************************** */
+
+.containerModal{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.7);
+    z-index: 999;
+    padding-top: 5vh;
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+
+.modalConteudo{
+    height: 90vh;
+    width: 90vw;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#containerModalCuriosidades{
+    min-height: 50px;
+    height: auto;
+    width: 1000px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    overflow: hidden;
+    background: #fff;
+    
+}
+
+#cabecalhoModal{
+    height: 80px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+    color: #fff;
+}
+
+#cabecalhoModal p{
+    font-size: 1.3em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#tituloCuriosidade{
+    color: #f58b00;
+}
+
+#fecharModal{
+    float: right;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #f58b00;
+    font-family: Helvetica;
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;   
+    user-select: none;
+}
+
+#fecharModal:hover{
+    transform: rotate(225deg);
+    transition: 1s;
+    color: #de3a21;
+}
+
+#containerConteudoModalCuriosidade{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;  
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;    
+}
+
+#containerLeft{
+    min-height: 0px;
+    max-height: 200px;
+    min-width: 0px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #292929;
+}
+
+#containerLeft img{
+    min-height: 0px;
+    max-height: 200px;
+    min-width: 0px;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+#containerRight{
+    min-height: 50px;
+    height: auto;
+    width: 670px;
+}
+
+.containerDadosCuriosidade, .containerDadosLojaTexto{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-content: center;  
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.containerDadosLojaTexto{
+    flex-direction: column;
+}
+
+#data, #nome{
+    min-height: 50px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 2px solid #292929;
+    margin-bottom: 10px;
+}
+
+.containerDadosCuriosidade p, .containerDadosLojaTexto p{
+    font: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.containerDadosLojaTexto p{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-bottom: 2px solid #292929;   
+    margin-bottom: 10px;
+}
+
+.containerDadosCuriosidade div{
+    font-size: 1.2em;
+    font-family: arial;
+    margin-right: 10px;
+}
+
+.containerDadosLojaTexto div{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: arial;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

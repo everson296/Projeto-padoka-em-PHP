@@ -1,0 +1,193 @@
+@media screen and (min-device-width:1300px){
+
+    #containerConteudo{
+        min-height: 500px;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 100px;
+    }
+
+    #containerSubMenu{
+        min-height: 100px;
+        height: auto;
+        width: 270px;
+        float: left;
+        margin-top: -100px;
+    }
+
+    #subMenu{
+        height: inherit;
+        width: 100%;
+    }
+    
+    .subItens{
+        height: 50px;
+        width: 90%;
+        background-color: #ff9500;
+        margin-bottom: 10px;
+        transition: 0.5s;
+        padding: 8px;
+        font-family: comic sans ms;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+
+    .subItens:hover {
+        width: 100%;
+    }
+
+    .containerProdutos{
+        height: 350px;
+        width: 350px;
+        background: linear-gradient(45deg , #FDC830,#F37335);
+        float: right;
+        padding-top: 30px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imgProduto{
+        height: 130px;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .nome, .decricao, .preco, .detalhes{
+        height: 38px;
+        width: 100%;
+        border-bottom: 2px solid  #825700;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-family: comic sans ms;
+        font-size: 24px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    .decricao{
+        height: 50px;
+        width: 100%;
+    }
+
+    .detalhes{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .configImg{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: border-box; 
+    }
+
+    #pao{
+        background-image: url(../imagens/inicio/produtos/pao.jpg);
+    }
+
+    #pao2{
+        background-image: url(../imagens/inicio/produtos/pao2.jpg);
+    }
+
+    #croassao{
+        background-image: url(../imagens/inicio/produtos/croass%C3%A3o.jpg);
+
+    }
+
+    #brigadeiro{
+        background-image: url(../imagens/inicio/produtos/brigadeiro.png);
+
+    }    
+
+    }
+
+    @media screen and (max-device-width:780px){
+
+    #containerConteudo{
+        min-height: 500px;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .containerProdutos{
+        height: 630px;
+        width: 630px;
+        background: linear-gradient(45deg , #ffb300,#c96f00);
+        padding-top: 30px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+    }
+        
+    .imgProduto{
+        height: 250px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+        
+    .nome, .decricao, .preco, .detalhes{
+        height: 80px;
+        width: 100%;
+        border-bottom: 2px solid  #825700;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-family: comic sans ms;
+        font-size: 3.5em;
+        box-sizing: border-box;
+        color: #fff;
+
+    }
+
+    .decricao{
+        height: 80px;
+        width: 100%;
+    }
+
+    .detalhes{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .configImg{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: border-box; 
+    }
+
+    #pao{
+        background-image: url(../imagens/inicio/produtos/pao.jpg);
+    }
+
+    #pao2{
+        background-image: url(../imagens/inicio/produtos/pao2.jpg);
+    }
+
+    #croassao{
+        background-image: url(../imagens/inicio/produtos/croass%C3%A3o.jpg);
+
+    }
+
+    #brigadeiro{
+        background-image: url(../imagens/inicio/produtos/brigadeiro.png);
+
+    }  
+
+
+
+}

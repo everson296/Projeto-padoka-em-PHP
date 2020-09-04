@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#ADMfaleConosco{
+    border: 2px solid #f58b00;
+    background-image: url(../img/support_orange.png);
+}
+
+#nomeADMfaleConosco{
+    color: #f58b00;
+}
+
+#filtro{
+    height: 50px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+#filtro select{
+    height: 40px;
+    width: 200px;
+    font-size: 1.3em;
+    font-family: arial;
+    border: 2px solid #000;
+    border-radius: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+}
+
+#containerConteudo table{
+    width: 100%;
+    min-height: 45px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#containerConteudo table tr{
+    width: auto;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+#containerConteudo table tr td{
+    height: inherit;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border: 2px solid #f58b00;
+    font-size: 1.1em;
+    font-family: arial;
+    color: #292929;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#containerConteudo table tr:nth-child(1) td{
+    font-size: 1.5em;
+    font-weight: bold;
+    outline: none;
+    user-select: none;
+}
+
+.containerAcao{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.imgApagar, .imgVizualizar{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/trash.png);
+    background-size: 40px;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.imgVizualizar{
+    background-image: url(../img/search.png);
+}
+
+/* ************** M O D A L ******************/
+
+.containerModal{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.7);
+    position: fixed;
+    z-index: 999;
+    padding-top: 5vh;
+    box-sizing: border-box;
+    display: none;
+}
+
+.modalConteudo{
+    height: 90vh;
+    width: 90vw;
+/*    background: #c9c9c9;*/
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#containerModalFaleConosco{
+    min-height: 50px;
+    height: auto;
+    width: 1000px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    overflow: hidden;
+    background: #fff;
+    
+}
+
+#cabecalhoModal{
+    height: 80px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#textoModal{
+    float: left;
+    font-size: 1.5em;
+    color: #fff;
+    height: inherit;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#textoModal p{
+    text-transform: uppercase;
+    color: #f58b00;
+    margin-left: 5px;
+}
+
+#fecharModal{
+    float: right;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #f58b00;
+    font-family: Helvetica;
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;   
+    user-select: none;
+}
+
+#fecharModal:hover{
+    transform: rotate(225deg);
+    transition: 1s;
+    color: #de3a21;
+}
+
+#containerModalFaleConosco table{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+}
+
+#containerModalFaleConosco table tr{
+    min-height: 50px;
+    height: auto;
+    width: auto;
+}
+
+#containerModalFaleConosco table tr td:nth-child(1){
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #292929;
+}
+
+#containerModalFaleConosco table tr td{
+    height: 35px;
+    width: auto;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: arial;
+    color: #292929;
+}
+
+#containerModalFaleConosco table tr:nth-of-type(2n) td{
+    color: #fff;
+    background: #292929;
+}
+
+#containerModalFaleConosco table tr:hover td{
+    background: #f58b00;
+    transition: .3s;
+}

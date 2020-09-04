@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+h1{
+    color: #000;
+}
+
+body{
+/*    background: #232224;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+}
+
+#cabecalhoModalVisualizar{
+    height: 70px;
+    width: 100%;
+    background: #2b2b2b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#textoModal{
+    height: inherit;
+    width: 1030px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: comic sans ms;
+    
+}
+
+#containerCadastroNivelUsuario{
+    min-height: 50px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+/*    background: blue;*/
+}
+
+#containerCadastroNivel{
+    min-height: 50px;
+    height: auto;
+    width: 700px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin-bottom: 50px;
+}
+
+#cabecalhoCadastroUsuario{
+    height: 70px;
+    width: 100%;
+    background: #292929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px; 
+}
+
+.containerText{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;  
+    flex-direction: column;
+    background: #fff;
+}
+
+.containerText input, .containerText select{
+    height: 40px;
+    width: 550px;
+    border: 2px solid #000;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.5em;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.containerBotao{
+    height: 70px;
+    width: 100%;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #292929;
+}
+
+.containerBotao input, #fechar{
+    height: 45px;
+    width: auto;
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid gray;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+#fechar{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+

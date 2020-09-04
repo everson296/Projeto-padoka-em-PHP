@@ -1,0 +1,358 @@
+        @media screen and (min-device-width:1300px){
+        .efeitoMenu #corContato{
+            color: var(--menuColor);
+        }
+
+        body{
+            background-image: url(../imagens/contato/background/b5.jpg);
+            background-position: center;
+            background-origin: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section{
+            background-color: transparent;
+        }
+
+        ::-webkit-input-placeholder {
+           color: rgb(77, 170, 232, 0.9);
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: rgb(77, 170, 232, 0.9); 
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: rgb(77, 170, 232, 0.9); 
+        }
+
+        :-ms-input-placeholder {  
+           color: rgb(77, 170, 232, 0.9);  
+        }
+
+        #containerConteudo{
+            min-height: 500px;
+            height: auto;
+            width: 100%;
+            background-color:  var(--blackTransparent);
+        /*    background-color:  rgba(255,255,255,0.25);*/
+        }
+
+        #containerFormulario{
+            min-height: 500px;
+            height: auto;
+            width: 100%;
+        /*    background-color: green;*/
+
+        }
+
+        .confgTxtInput{
+            height: 45px;
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .confgTxtInput input{
+            width: 500px;
+            border: none;
+            border-radius: 40px;
+        /*    background-color: rgba(38, 38, 38,0.9);*/
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            color: var(--white);
+            border: 4px solid transparent;
+            padding-left: 20px;
+            box-sizing: border-box;
+            outline: none;
+            user-select: none;
+        }
+
+        .confgTxtInput input:hover{
+            transition: .3s;
+            border-bottom-color: #0b9cb8;
+
+        }
+
+        #containerSexo{
+            height: 45px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #containerSexo input{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+        }    
+
+        .configRadio{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(77, 170, 232, 0.9);
+            padding-left: 30px;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        #configSelect{
+            min-height: 300px;
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        #configSelect select{
+            height: 50px;
+            width: 45%;
+            border: none;
+            font-size: 1.5em;
+            color: rgb(77, 170, 232, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 40px;
+            outline: none;
+            padding-left: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+
+        }
+
+        #configSelect textarea{
+            height: 200px;
+            width: 500px;
+            resize: none;
+            font-size: 1.6em;
+            border: none;
+            background-color: rgba(255,255,255,0.8);
+            padding-left: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        }
+
+        #configbtn{
+            min-height: 50px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+
+        }
+
+        #configbtn input{
+            height: 45px;
+            width: 500px;
+            border: none;
+            font-size: 1.5em;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #0162c8, #55e7fc);
+            font-family: sans-serif;
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+        }
+
+        @media screen and (max-device-width:780px){
+
+           .efeitoMenu #corContato{
+            color: var(--menuColor);
+        }
+
+        body{
+            background-image: url(../imagens/contato/background/b5.jpg);
+            background-position: center;
+            background-origin: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section{
+            background-color: transparent;
+        }
+
+        ::-webkit-input-placeholder {
+           color: rgb(77, 170, 232, 0.9);
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: rgb(77, 170, 232, 0.9); 
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: rgb(77, 170, 232, 0.9); 
+        }
+
+        :-ms-input-placeholder {  
+           color: rgb(77, 170, 232, 0.9);  
+        }
+
+        #containerConteudo{
+            min-height: 500px;
+            height: auto;
+            width: 100%;
+            background-color:  var(--blackTransparent);
+/*                background-color:  rgba(255,255,255,0.25);*/
+
+        }
+
+        #containerFormulario{
+            min-height: 500px;
+            height: auto;
+            width: 100%;
+/*                background-color: green;*/
+
+        }
+
+        .confgTxtInput{
+            height: 60px;
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .confgTxtInput input{
+            width: 80%;
+            border: none;
+            border-radius: 40px;
+        /*    background-color: rgba(38, 38, 38,0.9);*/
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 2em;
+            color: var(--white);
+            border: 4px solid transparent;
+            padding-left: 20px;
+            box-sizing: border-box;
+            outline: none;
+            user-select: none;
+
+
+        }
+
+        .confgTxtInput input:hover{
+            transition: .3s;
+            border-bottom-color: #0b9cb8;
+        }
+
+
+        #containerSexo{
+            height: 45px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #containerSexo input{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+        }    
+
+        .configRadio{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(77, 170, 232, 0.9);
+            padding-left: 30px;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        #configSelect{
+            min-height: 300px;
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            padding-top: 30px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        #configSelect select{
+            height: 50px;
+            width: 80%;
+            border: none;
+            font-size: 1.5em;
+            color: rgb(77, 170, 232, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 40px;
+            outline: none;
+            padding-left: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+
+        }
+
+        #configSelect textarea{
+            height: 200px;
+            width: 80%;
+            resize: none;
+            font-size: 1.6em;
+            border: none;
+            background-color: rgba(255,255,255,0.8);
+        }
+
+        #configbtn{
+            min-height: 50px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+
+        }
+
+        #configbtn input{
+            height: 45px;
+            width: 500px;
+            border: none;
+            font-size: 1.5em;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #0162c8, #55e7fc);
+            font-family: sans-serif;
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        } 
+
+        }

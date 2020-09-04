@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#containerConteudo{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#ADMconteudo{
+    border: 2px solid #f58b00;
+    background-image: url(../img/settings_orange.png);
+}
+
+#nomeADMconteudo{
+    color: #f58b00;
+}
+
+.containerEscolhaConteudo{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerEscolhaConteudo h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: arial;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.escolhaConteudo{
+    height: 130px;
+    width: 130px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-bottom: 20px;    
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    cursor: pointer;
+}
+
+.containerEscolhaConteudo:hover h3, .containerEscolhaConteudo:hover .escolhaConteudo{
+    color: #fc9d03;
+    border-color: #fc9d03;
+    transition: 1s;
+    transform: scale(1.2);
+    margin-bottom: 30px;
+}
+
+#curiosidade{
+    background-image: url(../img/interrogation.png);
+}
+
+#empresa{
+    background-image: url(../img/company.png);
+}
+
+#loja{
+   background-image: url(../img/sale.png); 
+}
+
+#curiosidade:hover{
+    background-image: url(../img/interrogation_orange.png);
+}
+
+#empresa:hover{
+    background-image: url(../img/company_orange.png);
+}
+
+#loja:hover{
+   background-image: url(../img/sale_orange.png); 
+}
+
+

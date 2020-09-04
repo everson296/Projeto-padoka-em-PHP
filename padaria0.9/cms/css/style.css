@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: linear-gradient(145deg, rgba(22, 162, 186, 0.2), rgba(255, 153, 0, 0.2)), url(../img/fundo.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.iconPaginaInicial{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 200px;
+    left: 210px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #292929;
+    background-image: url(../img/sydney-opera-house.png);
+    background-position: center;
+    background-size: 80px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#efeitoMenu{
+    height: 15px;
+    width: 150px;
+    background: rgba(255,255,255,0.5);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 180px;
+    left: -100px;
+    animation: luz 2s linear infinite reverse;
+    
+}
+
+@keyframes luz{
+    0%{
+        top: -100%;
+        left: 40px;
+    }
+    50%{
+        top: 180px;
+        left: -100px;
+    }
+    100%{
+        top: 180px;
+        left: -100px;
+    }
+}
+
+#containerCMS{
+    min-height: 800px;
+    height: auto;
+    width: 1000px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+#cabecalho{
+    height: 170px;
+    width: 100%;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho h1{
+    height: 100px;
+    width: 530px;
+    float: left;
+    font-size: 1.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho h1 p{
+    font-size: 2em;
+}
+
+#containerLogo{
+    height: 140px;
+    width: 400px;
+    background-image: url(../img/HILLVALEY.png);
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+#containerEscolha{
+    border-top: 2px solid #000;
+    height: 140px;
+    width: 100%;
+    background: #fff;
+}
+
+.containerFuncao{
+    height: 100%;
+    width: 150px;
+    margin-right: 20px;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    outline: none;
+}
+
+.imgFuncao{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-size: 75px;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+}
+
+.imgFuncao:hover{
+    transform:scale(1.05);
+    transition: .8s;
+}
+
+#ADMconteudo{
+    background-image: url(../img/settings.png);
+}
+#ADMfaleConosco{
+    background-image: url(../img/support.png);
+}
+#ADMprodutos{
+    background-image: url(../img/app.png);
+}
+#ADMusuario{
+    background-image: url(../img/person.png);
+}
+
+.containerFuncao input:disabled{
+    border: none;
+}
+
+#ADMconteudo:disabled{
+    background-image: url(../img/block.png);
+    background-size: 80px;
+}
+
+#ADMfaleConosco:disabled{
+    background-image: url(../img/block.png);
+    background-size: 80px;
+}
+
+#ADMprodutos:disabled{
+    background-image: url(../img/block.png);
+    background-size: 80px;
+}
+
+#ADMusuario:disabled{
+    background-image: url(../img/block.png);
+    background-size: 80px;
+}
+
+.nomeFuncao{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#containerBoasVindas{
+    height: inherit;
+    width: 300px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.textoBoasVindas{
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold; 
+}
+
+a .textoBoasVindas{
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+#containerConteudo{
+    border-top: 2px solid #000;
+    min-height: 430px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+#containerConteudo p{
+    position: absolute;
+    height: auto;
+    width: auto;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: arial;
+    top: 50px;
+    left: 100px;
+}
+
+footer{
+    height: 55px;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: comic sans ms;
+    background: #292929;
+    color: #fff;
+}
+
+containerFuncao
